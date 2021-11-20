@@ -1,6 +1,11 @@
 # WhatColorAndroid 
 
-### :star: 1차 과제
+### :star: 2차 과제
+
+
+## 구현영상 GIF
+
+<img src="https://user-images.githubusercontent.com/49150980/142743623-fee9a1ec-c389-4d28-a357-c78bdad5ac38.gif" width="40%">  
 
 # :white_check_mark: 서비스 이름과 간단한 서비스 소개
 ## 서비스 이름
@@ -124,12 +129,8 @@ getMission - 정원
 ## main
 * main 브랜치에서는 develop 브랜치에서 앱 개발이 완료되었을 때 main으로 pull request를 보냅니다.
 * 1.0.0버전 이후 버전이 변경될 때 develop 브랜치에서 main으로 pull request를 보냅니다.
+ 
 
-## 구현영상 GIF
-
-
-
-             
 
 
 
