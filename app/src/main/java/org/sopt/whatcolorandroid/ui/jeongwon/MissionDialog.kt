@@ -22,7 +22,7 @@ class MissionDialog: BaseDialogFragment<DialogMissionBinding>() {
     ) = DialogMissionBinding.inflate(inflater, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//            setupDialogBackground()
+            setupDialogBackground()
         binding.tvMissionDetailDes.text = mission
     }
 

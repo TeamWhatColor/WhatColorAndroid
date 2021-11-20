@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.core.content.res.ResourcesCompat
 import org.sopt.whatcolorandroid.R
 import org.sopt.whatcolorandroid.api.ServiceCreator
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
     override fun onStart(){
         super.onStart()
         initNetwork()
+        binding.tvMission3.visibility = View.VISIBLE
     }
 
 
