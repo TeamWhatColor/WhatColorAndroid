@@ -4,8 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import org.sopt.whatcolorandroid.R
+import org.sopt.whatcolorandroid.api.ServiceCreator
 import org.sopt.whatcolorandroid.databinding.ActivityMainBinding
 import org.sopt.whatcolorandroid.ui.jeongwon.MissionActivity
+import retrofit2.Call
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -20,5 +22,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         setContentView(binding.root)
+    }
+
+    private fun initnetwork(){
+        val call: Call<ResponseColorData> = ServiceCreator.
     }
 }
