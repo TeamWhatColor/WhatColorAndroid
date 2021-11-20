@@ -39,24 +39,24 @@
         app:srcCompat="@drawable/img_color" />
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/tv_team"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
-        android:text="Blue Team"
         android:fontFamily="@font/notosanskr_regular"
-        android:textFontWeight="400"
-        android:textStyle="normal"
-        android:textSize="13sp"
         android:lineHeight="19dp"
+        android:text="Blue Team"
         android:textAlignment="center"
         android:textColor="@color/gray3"
+        android:textFontWeight="400"
+        android:textSize="13sp"
+        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_team" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
     <TextView
-        android:id="@+id/tv_team"
+        android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
