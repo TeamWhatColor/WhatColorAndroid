@@ -16,23 +16,31 @@ import retrofit2.Call
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    private lateinit var content: String
     private val sharedPreferences = MyApplication.mySharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         binding.btnCheck.setOnClickListener{
             val intent = Intent(this, MissionActivity::class.java) // 확인 버튼 시 미션뷰로이동
-            startActivity(intent)
+            startActivityForResult(intent, 200)
         }
-
-        
         setContentView(binding.root)
     }
 
-    override fun onStart(){
-        super.onStart()
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == 200) {
+            binding.tvMission.text = content
+        }
+
+    }
+
+    override fun onResume(){
+        super.onResume()
         initNetwork()
         binding.tvMission3.visibility = View.VISIBLE
     }
@@ -56,7 +64,7 @@ class MainActivity : AppCompatActivity() {
                 } else if (color == "yellow") {
                     binding.ivColor.setImageDrawable(ResourcesCompat.getDrawable(resources, R.drawable.icon_yellow_small, null))
                 }
-                binding.tvMission.text = it.data.content
+                content = it.data.content
             }
         )
     }

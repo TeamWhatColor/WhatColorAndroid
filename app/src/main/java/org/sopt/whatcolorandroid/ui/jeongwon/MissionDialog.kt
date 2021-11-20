@@ -24,6 +24,9 @@ class MissionDialog: BaseDialogFragment<DialogMissionBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
             setupDialogBackground()
         binding.tvMissionDetailDes.text = mission
+        binding.btnMissionCheck.setOnClickListener {
+            dismiss()
+        }
     }
 
     private fun setupDialogBackground() {
