@@ -29,16 +29,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         setContentView(binding.root)
-
-        initnetwork()
     }
 
-    fun onStart(){
+    override fun onStart(){
         super.onStart()
-
+        initNetwork()
     }
 
-    private fun initnetwork(){
+    private fun initNetwork(){
         val uuid = sharedPreferences.getValue("uuid","")
         Log.d("hihi", uuid)
 
@@ -56,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                 } else if (color == "yellow") {
                     binding.ivColor.setImageDrawable(ResourcesCompat.getDrawable(resources, R.drawable.icon_yellow_small, null))
                 }
-
+                binding.tvMission.text = it.data.content
             }
         )
     }
