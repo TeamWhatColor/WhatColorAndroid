@@ -1,6 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_mission_detail_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="30dp"
+        android:textColor="#23C882"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_mission_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="솝거톤"
+        android:textSize="15sp"
+        android:textColor="#23C882"
+        app:layout_constraintTop_toBottomOf="@id/tv_mission_detail_num"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_mission_detail_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="빨간 땡땡이 양말을\n 신어보세요"
+        android:textSize="20sp"
+        android:fontFamily="@font/notosanskr_medium"
+        app:layout_constraintTop_toBottomOf="@id/tv_mission_detail_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_mission_check"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:backgroundTint="#23C882"
+        app:layout_constraintTop_toBottomOf="@id/tv_mission_detail_des"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="확인"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"/>
+
+
+
+
+
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    // 미션 1
     <ImageView
         android:id="@+id/iv_back"
         android:layout_width="wrap_content"
@@ -17,7 +18,297 @@
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="미션"/>
+        android:text="미션"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/iv_back"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toTopOf="@id/iv_back"/>
+
+
+    <ImageView
+        android:id="@+id/iv_1_rectangle"
+        android:layout_width="330dp"
+        android:layout_height="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/rectangle_mission" />
+
+    <TextView
+        android:id="@+id/iv_num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:fontFamily="@font/notosanskr_black"
+        android:textSize="33sp"
+        app:layout_constraintTop_toTopOf="@id/iv_1_rectangle"
+        app:layout_constraintBottom_toBottomOf="@id/iv_1_rectangle"
+        app:layout_constraintStart_toStartOf="@id/iv_1_rectangle"
+        android:layout_marginStart="34dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_1_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오리엔테이션"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/iv_num1"
+        android:layout_marginStart="33dp"
+        app:layout_constraintTop_toTopOf="@id/iv_1_rectangle"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/tv_1_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021년 10월 2일"
+        android:textSize="10sp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_1_title"
+        app:layout_constraintStart_toStartOf="@id/tv_1_title"/>
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_ok"
+        app:layout_constraintEnd_toEndOf="@id/iv_1_rectangle"
+        app:layout_constraintTop_toTopOf="@id/iv_1_rectangle"
+        app:layout_constraintBottom_toBottomOf="@id/iv_1_rectangle"
+        android:layout_marginEnd="24dp"/>
+
+    // 미션2
+    <ImageView
+        android:id="@+id/iv_2_rectangle"
+        android:layout_width="330dp"
+        android:layout_height="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_1_rectangle"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_mission" />
+
+    <TextView
+        android:id="@+id/iv_num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:fontFamily="@font/notosanskr_black"
+        android:textSize="33sp"
+        app:layout_constraintTop_toTopOf="@id/iv_2_rectangle"
+        app:layout_constraintBottom_toBottomOf="@id/iv_2_rectangle"
+        app:layout_constraintStart_toStartOf="@id/iv_2_rectangle"
+        android:layout_marginStart="34dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_2_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1차행사"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/iv_num2"
+        android:layout_marginStart="33dp"
+        app:layout_constraintTop_toTopOf="@id/iv_2_rectangle"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/tv_2_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021년 10월 20일"
+        android:textSize="10sp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_2_title"
+        app:layout_constraintStart_toStartOf="@id/tv_2_title"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_ok"
+        app:layout_constraintEnd_toEndOf="@id/iv_2_rectangle"
+        app:layout_constraintTop_toTopOf="@id/iv_2_rectangle"
+        app:layout_constraintBottom_toBottomOf="@id/iv_2_rectangle"
+        android:layout_marginEnd="24dp"/>
+
+    // 미션 3
+    <ImageView
+        android:id="@+id/iv_3_rectangle"
+        android:layout_width="330dp"
+        android:layout_height="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_2_rectangle"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_mission" />
+
+    <TextView
+        android:id="@+id/iv_num3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:fontFamily="@font/notosanskr_black"
+        android:textSize="33sp"
+        app:layout_constraintTop_toTopOf="@id/iv_3_rectangle"
+        app:layout_constraintBottom_toBottomOf="@id/iv_3_rectangle"
+        app:layout_constraintStart_toStartOf="@id/iv_3_rectangle"
+        android:layout_marginStart="34dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_3_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="솝거톤"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/iv_num3"
+        android:layout_marginStart="33dp"
+        app:layout_constraintTop_toTopOf="@id/iv_3_rectangle"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/tv_3_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021년 11월 21일"
+        android:textSize="10sp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_3_title"
+        app:layout_constraintStart_toStartOf="@id/tv_3_title"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_more"
+        app:layout_constraintEnd_toEndOf="@id/iv_3_rectangle"
+        app:layout_constraintTop_toTopOf="@id/iv_3_rectangle"
+        app:layout_constraintBottom_toBottomOf="@id/iv_3_rectangle"
+        android:layout_marginEnd="24dp"/>
+
+    // 미션 4
+    <ImageView
+        android:id="@+id/iv_4_rectangle"
+        android:layout_width="330dp"
+        android:layout_height="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_3_rectangle"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_mission_gray" />
+
+    <TextView
+        android:id="@+id/iv_num4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:fontFamily="@font/notosanskr_bold"
+        android:textSize="33sp"
+        app:layout_constraintTop_toTopOf="@id/iv_4_rectangle"
+        app:layout_constraintBottom_toBottomOf="@id/iv_4_rectangle"
+        app:layout_constraintStart_toStartOf="@id/iv_4_rectangle"
+        android:layout_marginStart="34dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_4_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="앱잼 데모데이"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/iv_num4"
+        android:layout_marginStart="33dp"
+        app:layout_constraintTop_toTopOf="@id/iv_4_rectangle"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/tv_4_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021년 1월 17일"
+        android:textSize="10sp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_4_title"
+        app:layout_constraintStart_toStartOf="@id/tv_4_title"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_lock"
+        app:layout_constraintEnd_toEndOf="@id/iv_4_rectangle"
+        app:layout_constraintTop_toTopOf="@id/iv_4_rectangle"
+        app:layout_constraintBottom_toBottomOf="@id/iv_4_rectangle"
+        android:layout_marginEnd="24dp"/>
+
+
+
+
+    // 미션 5
+    <ImageView
+        android:id="@+id/iv_5_rectangle"
+        android:layout_width="330dp"
+        android:layout_height="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_4_rectangle"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_mission_gray" />
+
+    <TextView
+        android:id="@+id/iv_num5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:fontFamily="@font/notosanskr_bold"
+        android:textSize="33sp"
+        app:layout_constraintTop_toTopOf="@id/iv_5_rectangle"
+        app:layout_constraintBottom_toBottomOf="@id/iv_5_rectangle"
+        app:layout_constraintStart_toStartOf="@id/iv_5_rectangle"
+        android:layout_marginStart="34dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_5_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="종무식"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/iv_num5"
+        android:layout_marginStart="33dp"
+        app:layout_constraintTop_toTopOf="@id/iv_5_rectangle"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/tv_5_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021년 1월 24일"
+        android:textSize="10sp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_5_title"
+        app:layout_constraintStart_toStartOf="@id/tv_5_title"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_lock"
+        app:layout_constraintEnd_toEndOf="@id/iv_5_rectangle"
+        app:layout_constraintTop_toTopOf="@id/iv_5_rectangle"
+        app:layout_constraintBottom_toBottomOf="@id/iv_5_rectangle"
+        android:layout_marginEnd="24dp"/>
+
+
+
+
+
+
+
 
 
 
