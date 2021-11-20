@@ -6,13 +6,123 @@
     android:layout_height="match_parent"
     tools:context=".ui.sehun.MainActivity">
 
-    <TextView
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_banner" />
+
+    <ImageView
+        android:id="@+id/iv_banner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_img_whatcolor" />
+
+    <ImageView
+        android:id="@+id/iv_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        app:srcCompat="@drawable/img_color" />
+
+    <TextView
+        android:id="@+id/tv_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/notosanskr_regular"
+        android:lineHeight="19dp"
+        android:text="Blue Team"
+        android:textAlignment="center"
+        android:textColor="@color/gray3"
+        android:textFontWeight="400"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="아자아자"
+        android:fontFamily="@font/notosanskr_bold"
+        android:textFontWeight="700"
+        android:textStyle="normal"
+        android:textSize="21sp"
+        android:lineHeight="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_color" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/rectangle_fill_gray"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/rectangle_fill_green"
+            android:fontFamily="@font/notosanskr_regular"
+            android:lineHeight="24dp"
+            android:paddingLeft="26dp"
+            android:paddingTop="4dp"
+            android:paddingRight="26dp"
+            android:paddingBottom="7dp"
+            android:text="미션 더보기"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textFontWeight="400"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_mission" />
+
+        <TextView
+            android:id="@+id/tv_mission"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/notosanskr_regular"
+            android:lineHeight="25dp"
+            android:text="아직 열람한 미션이 없습니다"
+            android:textAlignment="center"
+            android:textColor="@color/gray3"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,6 +25,7 @@
         </activity>
         <activity android:name=".ui.kangmin.UserActivity" />
         <activity android:name=".ui.kangmin.ResultActivity" />
+        <activity android:name=".ui.jeongwon.MissionActivity" />
     </application>
 
 </manifest>
