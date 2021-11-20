@@ -54,15 +54,4 @@
         android:textSize="15sp"
         android:textColor="#FFFFFF"/>
 
-
-
-
-
-
-
-
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

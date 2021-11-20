@@ -182,6 +182,7 @@
         app:layout_constraintStart_toStartOf="@id/tv_3_title"/>
 
     <ImageView
+        android:id="@+id/iv_btn_mission"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/btn_more"

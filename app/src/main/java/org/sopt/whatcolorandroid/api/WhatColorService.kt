@@ -1,5 +1,6 @@
 package org.sopt.whatcolorandroid.api
 
+import org.sopt.whatcolorandroid.ui.jeongwon.ResponseMissionData
 import org.sopt.whatcolorandroid.ui.kangmin.data.RequestUserInfo
 import org.sopt.whatcolorandroid.ui.kangmin.data.ResponseExist
 import org.sopt.whatcolorandroid.ui.kangmin.data.ResponseUserInfo
@@ -22,4 +23,9 @@ interface WhatColorService {
     fun getMain(
         @Path("id") id : String
     ) : Call<ResponseColorData>
+
+    @GET("mission/{uuid}")
+    fun getMission(
+        @Path("uuid") uuid: String): Call<ResponseMissionData>
+
 }
