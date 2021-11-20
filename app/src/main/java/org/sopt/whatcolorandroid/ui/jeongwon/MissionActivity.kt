@@ -37,6 +37,10 @@ class MissionActivity : AppCompatActivity() {
             dialog.isCancelable = false
             dialog.show(supportFragmentManager, "dialog")
         }
+
+        binding.ivBack.setOnClickListener {
+            finish()
+        }
     }
 
     companion object {
