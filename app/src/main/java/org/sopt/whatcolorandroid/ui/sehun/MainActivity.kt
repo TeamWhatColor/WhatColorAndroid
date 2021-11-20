@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 200) {
             binding.tvMission.text = content
+            binding.tvMission3.visibility = View.VISIBLE
         }
 
     }
@@ -42,7 +43,7 @@ class MainActivity : AppCompatActivity() {
     override fun onResume(){
         super.onResume()
         initNetwork()
-        binding.tvMission3.visibility = View.VISIBLE
+
     }
 
 
