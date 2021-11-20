@@ -19,15 +19,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityMainBinding.inflate(layoutInflater)
-
-        val intent = Intent(this, MissionActivity::class.java) // 확인 버튼 시 미션뷰로이동
-
+        setContentView(binding.root)
         binding.btnCheck.setOnClickListener{
+            val intent = Intent(this, MissionActivity::class.java) // 확인 버튼 시 미션뷰로이동
             startActivity(intent)
         }
 
+        
         setContentView(binding.root)
     }
 
@@ -35,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         initNetwork()
     }
+
 
     private fun initNetwork(){
         val uuid = sharedPreferences.getValue("uuid","")
